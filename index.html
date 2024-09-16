@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>Pokédex</h1>
+        <div id="filterBar">
+
+            <input type="text" id="searchBox" placeholder="Search Pokémon..." class="search-box">
+
+            <select id="sortOrder" class="sort-dropdown">
+                <option value="df">Sort 1-150</option>
+                <option value="az">Sort A-Z</option>
+                <option value="za">Sort Z-A</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="pokemonList" class="pokemon-container"></div>
+
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalName"></h2>
+            <p id="modalNumber"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
